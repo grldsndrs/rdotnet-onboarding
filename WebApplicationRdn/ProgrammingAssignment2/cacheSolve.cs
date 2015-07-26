@@ -5,7 +5,7 @@ using System.Web.Services.Protocols;
 using System.ComponentModel;
 using RDotNet;
 
-namespace WebApplicationRdn
+namespace WebApplicationRdn.ProgrammingAssignment2
 {
     public class cacheSolve
     {
@@ -24,9 +24,11 @@ namespace WebApplicationRdn
         /// </remarks>
         private makeCacheMatrix specialObject;
 
-        public cacheSolve(NumericMatrix matrix)
+        public NumericMatrix cacheSolve(NumericMatrix data)
         {
-            data = matrix;
+            this.data = data;
+            specialObject = _specialObject;
+            return inverse;
         }
 
         /// <summary>

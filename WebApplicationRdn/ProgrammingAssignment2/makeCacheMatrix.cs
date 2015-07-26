@@ -5,9 +5,9 @@ using System.Web.Services.Protocols;
 using System.ComponentModel;
 using RDotNet;
 
-namespace WebApplicationRdn
+namespace WebApplicationRdn.ProgrammingAssignment2
 {
-    public class makeCacheMatrix
+    public class makeCacheMatrix : WebApplicationRdn.ProgrammingAssignment2.ImakeCacheMatrix
     {
         private NumericMatrix  _matrix;
         private NumericMatrix _inverse;
