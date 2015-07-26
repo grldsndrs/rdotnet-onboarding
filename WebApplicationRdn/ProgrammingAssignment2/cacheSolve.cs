@@ -14,7 +14,23 @@ namespace WebApplicationRdn.ProgrammingAssignment2
         /// stoe gotten data from repositiry
         /// </summary>
         /// <remarks>scxczv</remarks>
-        private NumericMatrix data;
+        private NumericMatrix inputData;
+
+        /// <summary>
+        /// get/set input martrix
+        /// </summary>
+        public NumericMatrix _inputData
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+                inputData = _inputData;
+            }
+        }
+
         /// <summary>
         /// accesses the CacheMatrix object created elsewhere
         /// </summary>
@@ -22,27 +38,30 @@ namespace WebApplicationRdn.ProgrammingAssignment2
         /// In R on the command line the makeCacheMatrix function is sourced before it can be used.
         /// In .NET representation the makeCacheMatrix class is instantiated in the cacheSolve contructor
         /// </remarks>
-        private makeCacheMatrix specialObject;
+        private ImakeCacheMatrix specialObject;
 
-        public NumericMatrix cacheSolve(NumericMatrix data)
+        /// get cacheMatrix and set data value
+        /// <summary>
+        /// </summary>
+        public NumericMatrix cacheSolve(ImakeCacheMatrix specialObject)
         {
-            this.data = data;
-            specialObject = _specialObject;
+            this.specialObject = specialObject;
             return inverse;
         }
 
         /// <summary>
-        /// get cacheMatrix and set data value
+        /// get inverse
         /// </summary>
-        internal makeCacheMatrix _specialObject
+        public NumericMatrix _inverse
         {
             get
             {
-                return _specialObject = new makeCacheMatrix(data);
+                throw new System.NotImplementedException();
             }
             set
             {
             }
         }
+
     }
 }

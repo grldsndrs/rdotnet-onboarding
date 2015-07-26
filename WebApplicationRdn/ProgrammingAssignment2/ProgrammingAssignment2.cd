@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="## The two function implement a repositiory pattern in R.  The ##makeCacheMatrix function gets and sets the data, while the ##cacheSolve implements the business logic that acts on the data&#xD;&#xA;&#xD;&#xA;## Creates a special object that stores a numeric matrix and cache's its inverse.  Retrieves the data and maps it to the entity model, which is the returned specialObject.  The specialObject is a low level class that has an interface defined by makeCacheMatrix.  It is the repository.&#xD;&#xA;&#xD;&#xA;makeCacheMatrix &lt;- function(x = matrix()) {&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;##cacheSolve  implements the business logic for the solution to the problem.  The model is passed to it encapsulated in the makeCacheMatrix repository.  It operates on the model and returns a matrix.&#xD;&#xA;&#xD;&#xA;cacheSolve &lt;- function(x, ...) {&#xD;&#xA;        ## Return a matrix that is the inverse of 'x'&#xD;&#xA;}&#xD;&#xA;">
-    <Position X="0.5" Y="0.5" Height="3.573" Width="3.908" />
+    <Position X="0.5" Y="0.5" Height="4.339" Width="3.908" />
   </Comment>
   <Comment CommentText="1. Identify the classes that form the vocabulary of the problem domain">
     <Position X="4.698" Y="0.5" Height="0.75" Width="1.7" />
   </Comment>
   <Comment CommentText="cacheSolve is a high level object that depends on specialObject">
-    <Position X="10.937" Y="0.5" Height="0.75" Width="1.7" />
+    <Position X="6.75" Y="3" Height="0.75" Width="1.7" />
   </Comment>
   <Comment CommentText="2. Invent the structures whereby sets of objects work together to provide the behaviors that satisfy the requirements of the problem">
     <Position X="4.667" Y="1.406" Height="1.188" Width="1.7" />
   </Comment>
   <Class Name="WebApplicationRdn.ProgrammingAssignment2.makeCacheMatrix">
-    <Position X="7.25" Y="1" Width="1.5" />
+    <Position X="12.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAASAAAAA=</HashCode>
       <FileName>ProgrammingAssignment2\makeCacheMatrix.cs</FileName>
@@ -21,11 +21,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WebApplicationRdn.ProgrammingAssignment2.cacheSolve">
-    <Position X="11" Y="1.25" Width="1.5" />
+    <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAgAAAAAAQAAAIAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAgAgAAAAAAAAAAIAAAAAAAAAAAACAAAAI=</HashCode>
       <FileName>ProgrammingAssignment2\cacheSolve.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="specialObject" />
+    </ShowAsAssociation>
   </Class>
+  <Interface Name="WebApplicationRdn.ProgrammingAssignment2.ImakeCacheMatrix">
+    <Position X="10.25" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProgrammingAssignment2\ImakeCacheMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
