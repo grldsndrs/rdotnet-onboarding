@@ -43,7 +43,7 @@ namespace WebApplicationRdn.Controllers
 
             _engine = REngine.GetInstance(null, true, null, CharacterDevice);
             _engine.Initialize();
-            _engine.Install(GraphicsDevice);
+            _engine. .Install(GraphicsDevice);
         }
 
         public RCode Execute(int id, [FromBody] RCode code)
