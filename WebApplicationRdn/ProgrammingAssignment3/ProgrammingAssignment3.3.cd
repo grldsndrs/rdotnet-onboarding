@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="rankhospital &lt;- function(state, outcome, num = &quot;best&quot;) {&#xD;&#xA;        ## Read outcome data# Check that state and outcome are valid&#xD;&#xA;        ## Return hospital name in that state with the given rank&#xD;&#xA;        ## 30-day death rate&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;rankhospital(&quot;MD&quot;, &quot;heart failure&quot;, 5)&#xD;&#xA;&#xD;&#xA;Will call the Best num setter to do this&#xD;&#xA;The num argument can take values “best”, “worst”, or an integer indicating the ranking (smaller numbers are better). &#xD;&#xA;&#xD;&#xA;Extend validate&#xD;&#xA;If the number given by num is larger than the number of hospitals in that state, then the function should return NA. &#xD;&#xA;&#xD;&#xA;coercsion to numeric should make all non numerics go to NA&#xD;&#xA;Hospitals that do not have data on a particular outcome should be excluded from the set of hospitals when deciding the rankings.&#xD;&#xA;&#xD;&#xA;One can &#xD;&#xA;use the order function to sort multiple vectors in this manner &#xD;&#xA;(i.e. where one vector is used to break ties in another vector)&#xD;&#xA;ties should be broken by using the hospital name. &#xD;&#xA;&#xD;&#xA;Once the table is found sort it using the order function and lookup the  rankRequested in the list&#xD;&#xA;&#xD;&#xA;Call validate&#xD;&#xA;The function should check the validity of its arguments. If an invalid state value is passed to best, the function should throw an error via the stop function with the exact message “invalid state”. If an invalid outcome value is passed to best, the function should throw an error via the stop function with the exact message “invalid outcome”.">
+    <Position X="0.5" Y="0.5" Height="5.573" Width="4.117" />
+  </Comment>
+  <Class Name="WebApplicationRdn.rankhospital">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUACAAAAAAAAAAAAAICAICBAAAAAAGAAAAAAACAAA=</HashCode>
+      <FileName>ProgrammingAssignment3\rankhospital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

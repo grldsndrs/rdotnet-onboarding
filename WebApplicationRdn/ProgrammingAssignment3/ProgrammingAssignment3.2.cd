@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="best &lt;- function(state, outcome) {&#xD;&#xA;	## Read outcome data&#xD;&#xA;	## Check that state and outcome are valid&#xD;&#xA;	## Return hospital name in that state with lowest 30-day death&#xD;&#xA;	## rate&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;This validate class employs a decorator pattern on the best class.  It decorates the setter methods for the getBest parameters.  Exceptions are thrown if validation fails either setter method and execution is haulted.">
+    <Position X="0.5" Y="0.5" Height="2.334" Width="4.2" />
+  </Comment>
+  <Class Name="WebApplicationRdn.best">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="WebApplicationRdn.best.outcomeEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ProgrammingAssignment3\best.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAIAAAACAACAIBAAIAAAAAABAABAAIAAA=</HashCode>
+      <FileName>ProgrammingAssignment3\best.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApplicationRdn.validate">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIEAAAAAAAAAACAAAAAAAAAAAAAGAAAAAAAAAAA=</HashCode>
+      <FileName>ProgrammingAssignment3\validate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -154,6 +154,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ProgrammingAssignment3\best.cs" />
     <Compile Include="ProgrammingAssignment2\cacheSolve.cs" />
     <Compile Include="Controllers\CodeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -166,6 +167,9 @@
     <Compile Include="Models\SvgGraphicsContext.cs" />
     <Compile Include="Models\SvgGraphicsDevice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProgrammingAssignment3\validate.cs" />
+    <Compile Include="ProgrammingAssignment3\rankhospital.cs" />
+    <Compile Include="rankall.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -223,6 +227,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="ProgrammingAssignment2\ProgrammingAssignment2.cd" />
+    <Content Include="ProgrammingAssignment3\ProgrammingAssignment3.2.cd" />
+    <Content Include="ProgrammingAssignment3\ProgrammingAssignment3.3.cd" />
+    <Content Include="ProgrammingAssignment3\ProgrammingAssignment3.4.cd" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
